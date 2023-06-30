@@ -96,7 +96,7 @@ app.delete('/todos/:id', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, "index.html"));
+  res.send("<h1>Hello Guys</h1>")
 })
 
 // for all other routes, return 404
